@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form>
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" required><br>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" required><br>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <script>
+        // User data storage
+        var userData = [
+            { username: "user1", password: "pass1" },
+            { username: "user2", password: "pass2" },
+            { username: "user3", password: "pass3" }
+        ];
+
+        // Function to handle login form submission
+        function login() {
+            var username = document.getElementById("login-username").value;
+            var password = document.getElementById("login-password").value;
+
+            // Check if username and password match a registered user
+            var authenticatedUser = userData.find(function (user) {
+                return user.username === username && user.password === password;
+            });
+
+            if (authenticatedUser) {
+                alert("Login successful. Welcome, " + username + "!");
+                clearLoginForm();
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+
+        // Function to clear the login form
+        function clearLoginForm() {
+            document.getElementById("login-username").value = "";
+            document.getElementById("login-password").value = "";
+        }
+    </script>
+</body>
+
+</html>

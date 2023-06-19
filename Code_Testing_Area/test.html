@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+</head>
+
+<body>
+  <form id="loginForm">
+    <!-- Your login form fields here -->
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button type="button" id="loginButton">Login</button>
+  </form>
+
+  <script>
+    // Get the login button element
+    var loginButton = document.getElementById('loginButton');
+
+    // Attach a click event listener to the login button
+    loginButton.addEventListener('click', function () {
+      // Get the entered username and password values
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Perform your verification logic here
+      if (username === 'admin' && password === 'password') {
+        // If the verification is successful, redirect the user to another page
+        window.location.href = 'another-page.html';
+      } else {
+        // Handle incorrect login credentials
+        alert('Invalid username or password');
+      }
+    });
+  </script>
+</body>
+
+</html>

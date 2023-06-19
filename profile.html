@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <header class="bg-black py-4">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <div>
+                <a href="#" class="text-white text-xl font-bold">TWIC</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white" onclick="window.location.href='About.html';">About</a></li>
+                    <!-- <li><a href="#" class="text-white">logout</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div>
+        <div class="w-full bg-cover bg-no-repeat bg-center"
+            style="height: 200px; background-image: url(https://pbs.twimg.com/profile_banners/2161323234/1585151401/600x200);">
+            <img class="opacity-0 w-full h-full"
+                src="https://pbs.twimg.com/profile_banners/2161323234/1585151401/600x200" alt="">
+        </div>
+        <div class="p-4">
+            <div class="relative flex w-full">
+                <!-- Avatar -->
+                <div class="flex flex-1">
+                    <div style="margin-top: -6rem;">
+                        <div style="height:9rem; width:9rem;" class="md rounded-full relative avatar">
+                            <img style="height:9rem; width:9rem;"
+                                class="md rounded-full relative border-4 border-gray-900"
+                                src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
+                                alt="">
+                            <div class="absolute"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Follow Button
+            <div class="flex flex-col text-right">
+                <button
+                    class="flex justify-center  max-h-max whitespace-nowrap focus:outline-none  focus:ring  rounded max-w-max border bg-transparent border-blue-500 text-blue-500 hover:border-blue-800 hover:border-blue-800 flex items-center hover:shadow-lg font-bold py-2 px-4 rounded-full mr-0 ml-auto">
+                    Edit Profile
+                </button>
+            </div>
+        </div> -->
+
+                <!-- Profile info -->
+                <div class="space-y-1 justify-center w-full mt-3 ml-3">
+                    <!-- User basic-->
+                    <div>
+                        <h2 class="text-xl leading-6 font-bold text-white">Demo 1</h2>
+                        <p class="text-sm leading-5 font-medium text-gray-600">@user 01</p>
+                    </div>
+                    <!-- Description and others -->
+                    <div class="mt-3">
+                        <p class="text-white leading-tight mb-2">Software Engineer / Designer / Entrepreneur <br>Visit
+                            my
+                            website to test a working <b>Twitter Clone.</b> </p>
+                    </div>
+                </div>
+            </div><br>
+            <hr class="border-gray-800">
+        </div>
+
+
+
+        <div class="pl-16">
+            <p class="text-base width-auto font-medium text-white flex-shrink" id="result">
+                
+                
+            </p>
+
+
+            <!-- <div class="flex">
+                <div class="w-full">
+
+                    <div class="flex items-center">
+                        <div class="flex-1 text-center">
+                            <a href="#"
+                                class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                <svg class="text-center h-6 w-6" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+        <br>
+
+
+        <div class="flex flex-shrink-0 p-4 pb-0">
+            <a href="#" class="flex-shrink-0 group block">
+                <div class="flex items-center">
+                    <div>
+                        <img class="inline-block h-10 w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-base leading-6 font-medium text-white">
+                            Demo 1
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="pl-16" >
+            <p class="text-base width-auto font-medium text-white flex-shrink" id="result">
+            Day 07 of the challenge <span class="text-blue-400">#100DaysOfCode</span>
+            I was wondering what I can do with, so just
+            started building
+            Twitter UI using Tailwind and so far it looks so promising. I will post my code after
+            completion.
+            
+            </p>
+
+
+            <!-- <div class="flex">
+                <div class="w-full">
+
+                    <div class="flex items-center">
+                        <div class="flex-1 text-center">
+                            <a href="#"
+                                class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                <svg class="text-center h-6 w-6" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+        <br>
+        <hr class="border-gray-600 pd-5">
+
+
+        <div class="flex flex-shrink-0 p-4 pb-0">
+            <a href="#" class="flex-shrink-0 group block">
+                <div class="flex items-center">
+                    <div>
+                        <img class="inline-block h-10 w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-base leading-6 font-medium text-white">
+                            Demo 1
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="pl-16">
+            <p class="text-base width-auto font-medium text-white flex-shrink">
+                Most active airlines (daily flights):<br><br>
+                
+                US American Airline: 5,251<br>
+                US Delta Air Lines: 4,630<br>
+                US United Airlines: 4,098<br>
+                US Southwest Airlines: 4,078<br>
+            </p>
+
+
+            <!-- <div class="flex">
+                <div class="w-full">
+
+                    <div class="flex items-center">
+                        <div class="flex-1 text-center">
+                            <a href="#"
+                                class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                <svg class="text-center h-6 w-6" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+        <br>
+        <hr class="border-gray-600 pd-5">
+
+        <div class="flex flex-shrink-0 p-4 pb-0">
+            <a href="#" class="flex-shrink-0 group block">
+                <div class="flex items-center">
+                    <div>
+                        <img class="inline-block h-10 w-10 rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-base leading-6 font-medium text-white">
+                            Demo1
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="pl-16">
+            <p class="text-base width-auto font-medium text-white flex-shrink">
+               Happy Father day to all! <span class="text-blue-400">#FathersDay</span>
+            </p>
+
+
+            <!-- <div class="flex">
+                <div class="w-full">
+
+                    <div class="flex items-center">
+                        <div class="flex-1 text-center">
+                            <a href="#"
+                                class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                <svg class="text-center h-6 w-6" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+        <br>
+        <hr class="border-gray-600 pd-5">
+
+
+        <script>
+
+            let baseUrl =
+                (document.location.protocol === 'https:') ?
+                    ""
+                    :
+                    "http://localhost:3005";
+
+
+
+
+
+            let Delete = async () => {
+                try {
+                    let response = await axios.delete(`${baseUrl}/delete`)
+
+                    document.querySelector("#message").innerHTML = response.data.message
+
+                    setTimeout(() => {
+
+                        document.querySelector("#message").innerHTML = ""
+
+                    }, 2000);
+
+                    document.querySelector("#result").innerHTML = ""
+
+                } catch (error) {
+
+                }
+
+
+
+
+            }
+
+
+            function postTodo() {
+                let todoText = document.querySelector("#todo").value
+                let form = document.querySelector("#form").reset()
+                let current_date = new Date();
+                // document.querySelector("#result").innerHTML += todoText;
+                // document.querySelector("#result").innerHTML += '<br>';
+
+
+
+
+                axios.post(`${baseUrl}/todo`, {
+                    text: todoText
+                })
+                    .then(function (response) {
+                        console.log(response.data);
+
+                        getAllTodos();
+
+                        document.querySelector("#message").innerHTML = response.data.message
+                        setTimeout(() => {
+                            document.querySelector("#message").innerHTML = "";
+                        }, 2000);
+
+                        // response.data.data.map(eachTodo => {
+                        //     document.querySelector("#result").innerHTML += eachTodo
+                        //     document.querySelector("#result").innerHTML += '<br>'
+                        // })
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+
+            }
+
+            // function getAllTodos() {
+            //     axios.get(`${baseUrl}/todos`)
+            //         .then(function (response) {
+            //             console.log(response.data);
+
+            //              const resultElement = document.querySelector("#result");
+            //                 resultElement.innerHTML = "";
+
+            //             response.data.data.map(eachTodo => {
+            //                 resultElement.innerHTML += '<hr>';
+            //                 document.querySelector("#result").innerHTML += `<span id='span-${eachTodo._id}'> ${eachTodo.text} </span>`;
+            //                 document.querySelector("#result").innerHTML +=
+            //                     `<form id='form-${eachTodo._id}' style="display: none;" onsubmit="updateTodo('${eachTodo._id}'); return false"> 
+            //                         <input id='input-${eachTodo._id}' value='${eachTodo.text}'  />
+            //                         <button type="submit">Update</button>
+            //                     </form>`;
+
+            //                 document.querySelector("#result").innerHTML +=
+            //                     `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button onclick="deleteTodo('${eachTodo._id}')" id='delete-${eachTodo._id}'> Delete </button>
+            //                     <button onclick="editTodo('${eachTodo._id}')" id='edit-${eachTodo._id}'> Edit </button>`
+
+            //                 document.querySelector("#result").innerHTML += '<br>'
+            //             })
+
+            //         })
+            //         .catch(function (error) {
+            //             console.log(error);
+            //         })
+            // }
+
+            function getAllTodos() {
+                axios.get(`${baseUrl}/todos`)
+                    .then(function (response) {
+                        console.log(response.data);
+
+                        const resultElement = document.querySelector("#result");
+                        resultElement.innerHTML = "";
+
+
+                        response.data.data.forEach(eachTodo => {
+                            resultElement.innerHTML += `<span id='span-${eachTodo._id}'>${eachTodo.text}</span>`;
+                            resultElement.innerHTML +=
+                                `<form id='form-${eachTodo._id}' style="display: none;" onsubmit="updateTodo('${eachTodo._id}'); return false"> 
+                                    <input id='input-${eachTodo._id}' value='${eachTodo.text}'  />
+                                    <button type="submit">Update</button>
+                                </form>`;
+
+                            // let current_date = new Date();
+                            resultElement.innerHTML += `<p style='font-size: 12px; color: #808080'>${eachTodo.createdOn}</p>`;
+
+                            // resultElement.innerHTML +=
+                            document.querySelector("#result").innerHTML +=
+                                `<br><button onclick="deleteTodo('${eachTodo._id}')" id='delete-${eachTodo._id}' style="background-color: #EDEADE; border: none;
+                    color: black;
+                    padding: 5px;
+                    width: 25%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px;
+                    cursor: pointer;
+                    float: right;
+        
+                    border-radius: 12px;">Delete</button>
+        
+                                <button onclick="editTodo('${eachTodo._id}')" id='edit-${eachTodo._id}' style = " background-color: #EDEADE; border: none;
+                    color: black;
+                    padding: 5px;
+                    width: 25%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px;
+                    cursor: pointer;
+                    float: right;
+        
+                    border-radius: 12px;">Edit</button><br><br>`;
+
+                            resultElement.innerHTML += '<hr style="padding: 0.2%; margin: 0.5%; border-color: #404a5e;">';
+                        });
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+
+
+            getAllTodos();
+            setInterval(getAllTodos, 10000);
+
+
+
+
+            let deleteTodo = (id) => {
+
+                axios.delete(`${baseUrl}/todo/${id}`)
+                    .then(function (response) {
+                        // handle success
+                        console.log("response is success");
+                        console.log(response.data);
+
+                        // document.querySelector("#result").innerHTML =
+                        //     response.data
+
+                        getAllTodos();
+                        // getAllProducts();
+
+                    })
+                    .catch(function (error) {
+                        // handle error
+                        console.log(error);
+                        document.querySelector("#result").innerHTML =
+                            error.data.message
+                    })
+
+
+            }
+
+
+            let deleteAllTodos = async () => {
+                try {
+                    let response = await axios.delete(`${baseUrl}/todos`)
+
+                    document.querySelector("#message").innerHTML = response.data.message
+                    setTimeout(() => {
+                        document.querySelector("#message").innerHTML = ""
+                    }, 2000);
+
+                    document.querySelector("#result").innerHTML = "";
+
+                } catch (error) {
+                    console.log("error: ", error);
+                }
+
+
+            }
+
+
+            // let deleteTodo = async (id) => {
+            //     try {
+
+            //         let response = await axios.delete(`${baseUrl}/del/${id}`)
+
+            //         document.querySelector("#message").innerHTML = response.data.message
+
+            //         setTimeout(() => {
+
+            //             document.querySelector("#message").innerHTML = ""
+
+            //         }, 2000);
+
+            //         getalltodo()
+
+            //     } catch (error) {
+
+            //     }
+
+            // }
+
+            let editTodo = async (id) => {
+
+                console.log("edit id: ", id)
+                document.querySelector(`#form-${id}`).style.display = "inline"
+
+                document.querySelector(`#span-${id}`).style.display = "none"
+                document.querySelector(`#delete-${id}`).style.display = "none"
+                document.querySelector(`#edit-${id}`).style.display = "none"
+            }
+
+
+
+
+
+            let updateTodo = async (id) => {
+                console.log("update id: ", id)
+
+                let updatedText = document.querySelector(`#input-${id}`).value
+
+                try {
+                    let response = await axios.put(`${baseUrl}/todo/${id}`,
+                        {
+                            text: updatedText
+                        })
+
+                    document.querySelector("#message").innerHTML = response.data.message
+                    setTimeout(() => {
+                        document.querySelector("#message").innerHTML = ""
+                    }, 2000);
+
+                    getAllTodos();
+
+                } catch (error) {
+                    console.log("error: ", error);
+                }
+
+
+
+
+            }
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TWIC</title>
+    <link rel="stylesheet" href="userHome(Tail).css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-black py-4">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <div>
+                <a href="#" class="text-white text-xl font-bold">TWIC</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="About.html" class="text-white">About</a></li>
+                    <li><a href="LoginPage.html" class="text-white">logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="backgroundColor">
+        <!-- Rest of the page content goes here -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <!-- <div class="buttonbox">
+    <div class="flex space-x-4">
+        <button class="bg-green-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Profile
+        </button>
+        <button class="bg-green-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Tweet
+        </button>
+        <button class="bg-green-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Setting
+        </button>
+        </div>
+    </div> -->
+
+                <a href="profile.html"
+                    class="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-semibold rounded-full text-white hover:bg-black hover:text-blue-300">
+                    <svg class="mr-4 h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+                    </svg>
+
+                    Profile
+                </a>
+                <a href="setting.html"
+                    class="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-full text-white hover:bg-black hover:text-blue-300">
+                    <svg class="mr-4 h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                        </path>
+                    </svg>
+                    Settings
+                </a>
+
+
+                <div class="max-w-sm rounded-lg bg-black overflow-hidden shadow-lg m-4">
+                    <div class="flex">
+                        <div class="flex-1 m-2">
+                            <h2 class="px-4 py-2 text-xl w-48 font-semibold text-white">Trends</h2>
+                        </div>
+                        <!-- <div class="flex-1 px-4 py-2 m-2">
+                <a href="" class=" text-2xl rounded-full text-white hover:bg-blue-800 hover:text-blue-300 float-right">
+                    <svg class="m-2 h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                        </path>
+                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </a>
+            </div> -->
+                    </div>
+
+
+                    <hr class="border-gray-600">
+
+                    <!--first trending tweet-->
+                    <div class="flex">
+                        <div class="flex-1">
+                            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">1 . Trending</p>
+                            <h2 class="px-4 ml-2 w-48 font-bold text-white">#Pakistan</h2>
+                            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">5,466 Tweets</p>
+
+                        </div>
+                        <!-- <div class="flex-1 px-4 py-2 m-2">
+                            <a href=""
+                                class=" text-2xl rounded-full text-gray-400 hover:bg-blue-800 hover:text-blue-300 float-right">
+                                <svg class="m-2 h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                    <hr class="border-gray-600">
+
+                    <!--second trending tweet-->
+
+                    <div class="flex">
+                        <div class="flex-1">
+                            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">2 . Politics . Trending</p>
+                            <h2 class="px-4 ml-2 w-48 font-bold text-white">#9th_March</h2>
+                            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">8,464 Tweets</p>
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-600">
+
+                    <!--third trending tweet-->
+
+                    <div class="flex">
+                        <div class="flex-1">
+                            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">3 . Cricket . Trending</p>
+                            <h2 class="px-4 ml-2 w-48 font-bold text-white">#Asia_Cup_2023</h2>
+                            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">5,586 Tweets</p>
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-600">
+
+                    <!--forth trending tweet-->
+
+                    <div class="flex">
+                        <div class="flex-1">
+                            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">4 . Cricket . Trending</p>
+                            <h2 class="px-4 ml-2 w-48 font-bold text-white">#World_Cup_2023</h2>
+                            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">9,416 Tweets</p>
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-600">
+
+                    <!--5th trending tweet-->
+
+                    <div class="flex">
+                        <div class="flex-1">
+                            <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">5 . Trending</p>
+                            <h2 class="px-4 ml-2 w-48 font-bold text-white">#FathersDay</h2>
+                            <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">5,146 Tweets</p>
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-600">
+
+
+                </div>
+            </div>
+
+
+            <div class="grid-item">
+                <div class="tweetbackground">
+
+                    <div class="flex">
+                        <div class="m-2 w-10 py-1">
+                            <img class="inline-block h-10 w-10 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
+                                alt="" />
+                        </div>
+                        <div class="flex-1 px-2 pt-2 mt-2">
+                            <form onsubmit="postTodo(); return false;" id="form">
+                                <textarea class=" bg-transparent text-gray-400 font-medium text-lg w-full" rows="2"
+                                    cols="50" placeholder="What's happening?" id="todo" type="text"></textarea>
+                                <!-- todo: <input id="todo" type="text" required> -->
+                                <!-- <button type="submit">Add</button> -->
+                        </div>
+                    </div>
+                    <!--middle create tweet below icons-->
+                    <div class="flex">
+                        <div class="w-10"></div>
+
+                        <!-- <div class="w-64 px-2">
+
+                            <div class="flex items-center">
+                                <div class="flex-1 text-center px-1 py-1 m-2">
+                                    <a href="#"
+                                        class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                        <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div> -->
+
+                        <div class="flex-1">
+                            <button
+                                class="bg-blue-400 mt-5 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded-full mr-8 float-right"
+                                type="submit">
+                                Tweet
+                            </button>
+                            </form>
+                        </div>
+                    </div><hr style="padding: 0.5%; margin: 1%; border-color: #404a5e;">
+
+
+                    <!-- tweets card -->
+                    <!-- <div class="flex flex-shrink-0 p-4 pb-0">
+                        <a href="#" class="flex-shrink-0 group block">
+                            <div class="flex items-center">
+                                <div>
+                                    <img class="inline-block h-10 w-10 rounded-full"
+                                        src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
+                                        alt="" />
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-base leading-6 font-medium text-white">
+                                        Sonali Hirave
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pl-16">
+                        <p class="text-base width-auto font-medium text-white flex-shrink">
+                            <!-- Day 07 of the challenge <span class="text-blue-400">#100DaysOfCode</span>
+                            I was wondering what I can do with <span class="text-blue-400">#tailwindcss</span>, so just
+                            started building
+                            Twitter UI using Tailwind and so far it looks so promising. I will post my code after
+                            completion.
+
+                            [07/100] -->
+                    <!-- <span class="text-blue-400"> #WomenWhoCode #CodeNewbie</span> -->
+                    <!-- </p> -->
+
+
+                    <!-- <div class="flex">
+                        <div class="w-full">
+
+                            <div class="flex items-center">
+                                <div class="flex-1 text-center">
+                                    <a href="#"
+                                        class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                        <svg class="text-center h-6 w-6" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+                    <!-- <hr class="border-gray-600 pd-5"> -->
+                    <div class="flex flex-shrink-0 p-2 pb-0">
+                        <a href="#" class="flex-shrink-0 group block">
+                            <div class="flex items-center">
+                                <div>
+                                    <img class="inline-block h-10 w-10 rounded-full"
+                                        src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png"
+                                        alt="" />
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-base leading-6 font-medium text-white">
+                                        Demo 1
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+
+                    <div class="pl-16">
+                        <p class="text-base width-auto font-medium text-white flex-shrink" id="result">
+                            <!-- Day 07 of the challenge <span class="text-blue-400">#100DaysOfCode</span>
+                            I was wondering what I can do with <span class="text-blue-400">#tailwindcss</span>, so just
+                            started building
+                            Twitter UI using Tailwind and so far it looks so promising. I will post my code after
+                            completion.
+
+                            [07/100] -->
+                            <!-- <span class="text-blue-400"> #WomenWhoCode #CodeNewbie</span> -->
+                        </p>
+                    </div>
+
+
+                    <!-- <div class="flex flex-shrink-0 p-4 pb-0">
+                        <a href="#" class="flex-shrink-0 group block">
+                            <div class="flex items-center">
+                                <div>
+                                    <img class="inline-block h-10 w-10 rounded-full"
+                                        src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-base leading-6 font-medium text-white">
+                                        Demo 2
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="pl-16">
+                        <p class="text-base width-auto font-medium text-white flex-shrink" id="result">
+                            <!-- Day 07 of the challenge <span class="text-blue-400">#100DaysOfCode</span>
+                                                I was wondering what I can do with <span class="text-blue-400">#tailwindcss</span>, so just
+                                                started building
+                                                Twitter UI using Tailwind and so far it looks so promising. I will post my code after
+                                                completion.
+                    
+                                                [07/100] -->
+                    <!-- <span class="text-blue-400"> #WomenWhoCode #CodeNewbie</span> -->
+                    <!-- </p>
+                </div>  -->
+
+
+                    <!-- <h1>Todo App with server</h1>
+
+                        <form onsubmit="postTodo(); return false">
+                            todo: <input id="todo" type="text" required>
+                            <button type="submit">Add</button>
+                        </form>
+                        <button onclick="getAllTodos()">Refresh</button>
+                        <button onclick="deleteAllTodos()">Delete All</button>
+
+                        <h5 id="message" style="height:20px; color: red;"> </h5> -->
+
+                    <!-- <h3 id="result"> </h3> -->
+
+
+                    <script>
+
+                        let baseUrl =
+                            (document.location.protocol === 'https:') ?
+                                "https://fancy-gear-lamb.cyclic.app/"
+                                :
+                                "http://localhost:3005";
+
+
+
+
+
+                        let Delete = async () => {
+                            try {
+                                let response = await axios.delete(`${baseUrl}/delete`)
+
+                                document.querySelector("#message").innerHTML = response.data.message
+
+                                setTimeout(() => {
+
+                                    document.querySelector("#message").innerHTML = ""
+
+                                }, 2000);
+
+                                document.querySelector("#result").innerHTML = ""
+
+                            } catch (error) {
+
+                            }
+
+
+
+
+                        }
+
+
+                        function postTodo() {
+                            let todoText = document.querySelector("#todo").value
+                            let form = document.querySelector("#form").reset()
+                            let current_date = new Date();
+                            // document.querySelector("#result").innerHTML += todoText;
+                            // document.querySelector("#result").innerHTML += '<br>';
+
+
+
+
+                            axios.post(`${baseUrl}/todo`, {
+                                text: todoText
+                            })
+                                .then(function (response) {
+                                    console.log(response.data);
+
+                                    getAllTodos();
+
+                                    document.querySelector("#message").innerHTML = response.data.message
+                                    setTimeout(() => {
+                                        document.querySelector("#message").innerHTML = "";
+                                    }, 2000);
+
+                                    // response.data.data.map(eachTodo => {
+                                    //     document.querySelector("#result").innerHTML += eachTodo
+                                    //     document.querySelector("#result").innerHTML += '<br>'
+                                    // })
+
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                })
+
+                        }
+
+                        // function getAllTodos() {
+                        //     axios.get(`${baseUrl}/todos`)
+                        //         .then(function (response) {
+                        //             console.log(response.data);
+
+                        //              const resultElement = document.querySelector("#result");
+                        //                 resultElement.innerHTML = "";
+
+                        //             response.data.data.map(eachTodo => {
+                        //                 resultElement.innerHTML += '<hr>';
+                        //                 document.querySelector("#result").innerHTML += `<span id='span-${eachTodo._id}'> ${eachTodo.text} </span>`;
+                        //                 document.querySelector("#result").innerHTML +=
+                        //                     `<form id='form-${eachTodo._id}' style="display: none;" onsubmit="updateTodo('${eachTodo._id}'); return false"> 
+                        //                         <input id='input-${eachTodo._id}' value='${eachTodo.text}'  />
+                        //                         <button type="submit">Update</button>
+                        //                     </form>`;
+
+                        //                 document.querySelector("#result").innerHTML +=
+                        //                     `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button onclick="deleteTodo('${eachTodo._id}')" id='delete-${eachTodo._id}'> Delete </button>
+                        //                     <button onclick="editTodo('${eachTodo._id}')" id='edit-${eachTodo._id}'> Edit </button>`
+
+                        //                 document.querySelector("#result").innerHTML += '<br>'
+                        //             })
+
+                        //         })
+                        //         .catch(function (error) {
+                        //             console.log(error);
+                        //         })
+                        // }
+
+                        function getAllTodos() {
+                            axios.get(`${baseUrl}/todos`)
+                                .then(function (response) {
+                                    console.log(response.data);
+
+                                    const resultElement = document.querySelector("#result");
+                                    resultElement.innerHTML = "";
+
+
+                                    response.data.data.forEach(eachTodo => {
+                                        resultElement.innerHTML += `<span id='span-${eachTodo._id}'>${eachTodo.text}</span>`;
+                                        resultElement.innerHTML +=
+                                            `<form id='form-${eachTodo._id}' style="display: none;" onsubmit="updateTodo('${eachTodo._id}'); return false"> 
+                            <input id='input-${eachTodo._id}' value='${eachTodo.text}'  />
+                            <button type="submit">Update</button>
+                        </form>`;
+
+                                        // let current_date = new Date();
+                                        resultElement.innerHTML += `<p style='font-size: 12px; color: #808080'>${eachTodo.createdOn}</p>`;
+
+                                        // resultElement.innerHTML +=
+                                        document.querySelector("#result").innerHTML +=
+                                            `<br><button onclick="deleteTodo('${eachTodo._id}')" id='delete-${eachTodo._id}' style="background-color: #EDEADE; border: none;
+            color: black;
+            padding: 5px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px;
+            cursor: pointer;
+            float: right;
+
+            border-radius: 12px;">Delete</button>
+
+                        <button onclick="editTodo('${eachTodo._id}')" id='edit-${eachTodo._id}' style = " background-color: #EDEADE; border: none;
+            color: black;
+            padding: 5px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px;
+            cursor: pointer;
+            float: right;
+
+            border-radius: 12px;">Edit</button><br><br>`;
+            
+                                        resultElement.innerHTML += '<hr style="padding: 0.2%; margin: 0.5%; border-color: #404a5e;">';
+                                    });
+
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                });
+                        }
+
+
+                        getAllTodos();
+                        setInterval(getAllTodos, 10000);
+
+
+
+
+                        let deleteTodo = (id) => {
+
+                                axios.delete(`${baseUrl}/todo/${id}`)
+                                    .then(function (response) {
+                                        // handle success
+                                        console.log("response is success");
+                                        console.log(response.data);
+
+                                        // document.querySelector("#result").innerHTML =
+                                        //     response.data
+
+                                        getAllTodos();
+                                        // getAllProducts();
+
+                                    })
+                                    .catch(function (error) {
+                                        // handle error
+                                        console.log(error);
+                                        document.querySelector("#result").innerHTML =
+                                            error.data.message
+                                    })
+
+
+                            }
+
+
+                        let deleteAllTodos = async () => {
+                            try {
+                                let response = await axios.delete(`${baseUrl}/todos`)
+
+                                document.querySelector("#message").innerHTML = response.data.message
+                                setTimeout(() => {
+                                    document.querySelector("#message").innerHTML = ""
+                                }, 2000);
+
+                                document.querySelector("#result").innerHTML = "";
+
+                            } catch (error) {
+                                console.log("error: ", error);
+                            }
+
+
+                        }
+
+
+                        // let deleteTodo = async (id) => {
+                        //     try {
+
+                        //         let response = await axios.delete(`${baseUrl}/del/${id}`)
+
+                        //         document.querySelector("#message").innerHTML = response.data.message
+
+                        //         setTimeout(() => {
+
+                        //             document.querySelector("#message").innerHTML = ""
+
+                        //         }, 2000);
+
+                        //         getalltodo()
+
+                        //     } catch (error) {
+
+                        //     }
+
+                        // }
+
+                        let editTodo = async (id) => {
+
+                            console.log("edit id: ", id)
+                            document.querySelector(`#form-${id}`).style.display = "inline"
+
+                            document.querySelector(`#span-${id}`).style.display = "none"
+                            document.querySelector(`#delete-${id}`).style.display = "none"
+                            document.querySelector(`#edit-${id}`).style.display = "none"
+                        }
+
+
+
+
+
+                        let updateTodo = async (id) => {
+                            console.log("update id: ", id)
+
+                            let updatedText = document.querySelector(`#input-${id}`).value
+
+                            try {
+                                let response = await axios.put(`${baseUrl}/todo/${id}`,
+                                    {
+                                        text: updatedText
+                                    })
+
+                                document.querySelector("#message").innerHTML = response.data.message
+                                setTimeout(() => {
+                                    document.querySelector("#message").innerHTML = ""
+                                }, 2000);
+
+                                getAllTodos();
+
+                            } catch (error) {
+                                console.log("error: ", error);
+                            }
+
+
+
+
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.fadingbackground {
+    background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+}
+
+.earthAnimation {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 0.05em auto;
+    background: #888 url(/resources/2d_earth_image.jpg) 0 0 repeat;
+    border-radius: 50%;
+    background-size: 630px;
+    animation: rotate 3s linear infinite;
+    transition: transform 100ms linear;
+    transform-style: preserve-3d;
+    /* box-shadow: inset 20px 0 80px 6px rgb(0,0,0); */
+    color: #000;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 430px 0;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+body {
+    background: #111;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+
+    font-family: Khula;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <form>
+        <label for="reg-username">Username:</label>
+        <input type="text" id="reg-username" required><br>
+
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" required><br>
+
+        <button type="button" onclick="register()">Register</button>
+    </form>
+
+    <script>
+        // User data storage
+        var userData = [];
+
+        // Function to handle registration form submission
+        function register() {
+            var username = document.getElementById("reg-username").value;
+            var password = document.getElementById("reg-password").value;
+
+            // Check if username is already registered
+            var existingUser = userData.find(function (user) {
+                return user.username === username;
+            });
+
+            if (existingUser) {
+                alert("Username is already taken. Please choose a different username.");
+                return;
+            }
+
+            // Add user to the data storage
+            userData.push({ username: username, password: password });
+            alert("Registration successful. You can now log in.");
+            clearRegistrationForm();
+        }
+
+        // Function to clear the registration form
+        function clearRegistrationForm() {
+            document.getElementById("reg-username").value = "";
+            document.getElementById("reg-password").value = "";
+        }
+    </script>
+</body>
+
+</html>

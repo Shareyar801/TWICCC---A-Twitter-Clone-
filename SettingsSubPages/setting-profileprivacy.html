@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Settings</title>
+
+    <style>
+        .center {
+          bottom: 50%;
+          position: absolute;
+          top: 15%;
+          left: 15%;
+          border: 5px;
+          margin: auto;
+          width: 70%;
+          padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #1a202c">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">&nbsp;TWIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="mx-6" style="margin-left: 85%;">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ContactModal">About</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ContactModal">LogOut</button>
+                    <!-- <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="LoginModalLabel">About Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    </div>
+                </div>
+                </div> -->
+    </nav>
+
+    <div class="col-lg-9 col-md-8 col-12 center" bis_skin_checked="1">
+        <!-- Card -->
+        <div class="card" bis_skin_checked="1">
+            <!-- Card header -->
+            <div class="card-header" bis_skin_checked="1">
+                <h3 class="mb-0">Profile Privacy Settings</h3>
+                <p class="mb-0">
+                    Making your profile public allow other users to see what you
+                    have been learning on Geeks.
+                </p>
+            </div>
+            <!-- Card body -->
+            <div class="card-body" bis_skin_checked="1">
+                <div class="row d-lg-flex justify-content-between" bis_skin_checked="1">
+                    <div class="col-lg-9 col-md-7 col-12 mb-3 mb-lg-0" bis_skin_checked="1">
+                        <h4 class="mb-0">Privacy levels</h4>
+                        <p class="mb-0">Show your profile public and private.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-12" bis_skin_checked="1">
+                        <select class="selectpicker" data-width="100%">
+                            <option value="">Select</option>
+                            <option value="public">Public</option>
+                            <option value="private">Private</option>
+                        </select>
+                    </div>
+                </div>
+                <hr >
+                <div bis_skin_checked="1">
+                    <h4 class="mb-0">Profile settings</h4>
+                    <p class="mb-3">
+                        These controls give you the ability to customize what areas
+                        of your profile others are able to see.
+                    </p>
+                    <!-- List group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- List group item -->
+                        <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Show your profile on search engines</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="swicthOne" checked="">
+                                    <label class="form-check-label" for="swicthOne"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- List group item -->
+                        <!-- <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Show courses you're taking on your profile page</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="switchTwo">
+                                    <label class="form-check-label" for="switchTwo"></label>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- List group item -->
+                        <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Allow everyone to message you in private</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="switchThree" checked="">
+                                    <label class="form-check-label" for="switchThree"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- List group item -->
+                        <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Lock your Tweets from others</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="switchFour" checked="">
+                                    <label class="form-check-label" for="switchFour"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- List group item -->
+                        <!-- <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Completed courses</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="switchFive" checked="">
+                                    <label class="form-check-label" for="switchFive"></label>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- List group item -->
+                        <li class="list-group-item d-flex align-items-center justify-content-between px-0 py-2">
+                            <div bis_skin_checked="1">Only friends can mention you</div>
+                            <div bis_skin_checked="1">
+                                <div class="form-check form-switch" bis_skin_checked="1">
+                                    <input type="checkbox" class="form-check-input" id="switchSix" checked="">
+                                    <label class="form-check-label" for="switchSix"></label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
