@@ -34,7 +34,7 @@ function registerUser() {
   };
   localStorage.setItem("userdetail", JSON.stringify(user_ids));
 
-  window.location.href = "LoginPage.html";
+  window.location.href = "index.html";
 
   return true;
 }
