@@ -187,10 +187,10 @@ app.delete('/todo/:id', async (req, res) => {
 
 
 
-app.post("/LoginPage", (req, res) => {
-  console.log("myboy post", new Date() + req.ip);
-  res.send("post by myboy");
-});
+// app.post("/LoginPage", (req, res) => {
+//   console.log("myboy post", new Date() + req.ip);
+//   res.send("post by myboy");
+// });
 
 
 

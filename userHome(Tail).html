@@ -20,7 +20,7 @@
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="About.html" class="text-white">About</a></li>
-                    <li><a href="index.html" class="text-white">logout</a></li>
+                    <li><a href="LoginPage.html" class="text-white">logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -280,6 +280,7 @@
                             </div>
                         </a>
                     </div>
+                    
                     <br>
 
                     <div class="pl-16">
@@ -344,7 +345,7 @@
 
                         let baseUrl =
                             (document.location.protocol === 'https:') ?
-                                "https://shareyar801.github.io/TWICCC---A-Twitter-Clone-/"
+                                ""
                                 :
                                 "http://localhost:3005";
 
@@ -533,23 +534,23 @@
                             }
 
 
-                        let deleteAllTodos = async () => {
-                            try {
-                                let response = await axios.delete(`${baseUrl}/todos`)
+                        // let deleteAllTodos = async () => {
+                        //     try {
+                        //         let response = await axios.delete(`${baseUrl}/todos`)
 
-                                document.querySelector("#message").innerHTML = response.data.message
-                                setTimeout(() => {
-                                    document.querySelector("#message").innerHTML = ""
-                                }, 2000);
+                        //         document.querySelector("#message").innerHTML = response.data.message
+                        //         setTimeout(() => {
+                        //             document.querySelector("#message").innerHTML = ""
+                        //         }, 2000);
 
-                                document.querySelector("#result").innerHTML = "";
+                        //         document.querySelector("#result").innerHTML = "";
 
-                            } catch (error) {
-                                console.log("error: ", error);
-                            }
+                        //     } catch (error) {
+                        //         console.log("error: ", error);
+                        //     }
 
 
-                        }
+                        // }
 
 
                         // let deleteTodo = async (id) => {
